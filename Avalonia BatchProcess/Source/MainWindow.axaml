@@ -1,0 +1,61 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+        Width="1024" Height="600"
+        x:Class="BatchProcess3.MainWindow"
+        Title="BatchProcess3">
+
+        <Grid Background="{DynamicResource PrimaryBackground}" ColumnDefinitions="Auto, *">
+                <Border Padding="20" Background="{DynamicResource PrimaryBackgroundGradient}">
+                        <Grid RowDefinitions="*, Auto">
+                                <StackPanel Spacing="12">
+                                        <Image Source="{SvgImage /Assets/Images/logo.svg}" Width="220"></Image>
+                                        
+                                        <Button HorizontalAlignment="Stretch">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Label Classes="icon" Content="&#xe2c2;"></Label>
+                                                        <Label Classes="akko" Content="Home"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Label Classes="icon" Content="&#xe346;"></Label>
+                                                        <Label Classes="akko" Content="Process"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Label Classes="icon" Content="&#xe7f2;"></Label>
+                                                        <Label Classes="akko" Content="Actions"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Label Classes="icon" Content="&#xe3ee;"></Label>
+                                                        <Label Classes="akko" Content="Macros"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Label Classes="icon" Content="&#xeb7a;"></Label>
+                                                        <Label Classes="akko" Content="Reporter"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Label Classes="icon" Content="&#xe03a;"></Label>
+                                                        <Label Classes="akko" Content="History"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                </StackPanel>
+                                
+                                <Button Classes="transparent" Grid.Row="1">
+                                        <Label Classes="icon-only" Content="&#xe272;"></Label>
+                                </Button>
+                        </Grid>
+                </Border>
+        </Grid>
+        
+</Window>
