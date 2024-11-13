@@ -4,8 +4,18 @@
     <option name="projectPerEditor">
       <map>
         <entry key="App.axaml" value="BatchProcess3.csproj" />
+        <entry key="MainView.axaml" value="BatchProcess3.csproj" />
         <entry key="MainWindow.axaml" value="BatchProcess3.csproj" />
         <entry key="Styles/AppDefaultStyles.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/ActionsPageView.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/HistoryPageView.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/HomePageView.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/HomePageViewModel.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/MacrosPageView.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/MainView.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/ProcessPageView.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/ReporterPageView.axaml" value="BatchProcess3.csproj" />
+        <entry key="Views/SettingsPageView.axaml" value="BatchProcess3.csproj" />
       </map>
     </option>
   </component>

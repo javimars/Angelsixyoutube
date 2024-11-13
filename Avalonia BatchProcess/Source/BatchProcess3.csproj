@@ -16,11 +16,11 @@
         <PackageReference Include="Avalonia.Fonts.Inter" Version="11.1.0" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.0" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Assets\Fonts\" />
-      <Folder Include="Assets\Images\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -34,5 +34,18 @@
       <AvaloniaResource Include="Assets\Fonts\Phosphor.ttf" />
       <None Remove="Assets\Fonts\Phosphor-Fill.ttf" />
       <AvaloniaResource Include="Assets\Fonts\Phosphor-Fill.ttf" />
+      <None Remove="Assets\Images\icon.svg" />
+      <AvaloniaResource Include="Assets\Images\icon.svg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\MainView.axaml.cs">
+        <DependentUpon>MainView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\ActionsPageView.axaml.cs">
+        <DependentUpon>ActionsPageView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 </Project>
