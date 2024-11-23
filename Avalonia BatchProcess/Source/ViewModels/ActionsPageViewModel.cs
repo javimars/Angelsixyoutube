@@ -1,5 +1,11 @@
-﻿namespace BatchProcess3.ViewModels;
+﻿using BatchProcess3.Data;
 
-public partial class ActionsPageViewModel : ViewModelBase
+namespace BatchProcess3.ViewModels;
+
+public partial class ActionsPageViewModel : PageViewModel
 {
+    public ActionsPageViewModel()
+    {
+        PageName = ApplicationPageNames.Actions;
+    }
 }

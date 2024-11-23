@@ -1,5 +1,11 @@
-﻿namespace BatchProcess3.ViewModels;
+﻿using BatchProcess3.Data;
 
-public partial class HistoryPageViewModel : ViewModelBase
+namespace BatchProcess3.ViewModels;
+
+public partial class HistoryPageViewModel : PageViewModel
 {
+    public HistoryPageViewModel()
+    {
+        PageName = ApplicationPageNames.History;
+    }
 }
