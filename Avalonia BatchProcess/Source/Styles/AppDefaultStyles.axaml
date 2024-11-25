@@ -60,7 +60,7 @@
         <Setter Property="Padding" Value="0 3.8 0 -3.5"></Setter>
     </Style>
     
-    <Style Selector="Button">
+    <Style Selector=":is(Button)">
         <Setter Property="FontSize" Value="20"></Setter>
         <Setter Property="CornerRadius" Value="10"></Setter>
         <Setter Property="Padding" Value="9 5.5 9.2 5.5"></Setter>
@@ -68,7 +68,7 @@
         <Setter Property="Background" Value="{DynamicResource PrimaryBackground}"></Setter>
     </Style>
     
-    <Style Selector="Button /template/ ContentPresenter">
+    <Style Selector=":is(Button) /template/ ContentPresenter">
         <Setter Property="Transitions">
             <Transitions>
                 <BrushTransition Property="Foreground" Duration="0:0:0.1" />
@@ -78,28 +78,28 @@
         </Setter>
     </Style>
     
-    <Style Selector="Button.transparent:pointerover /template/ ContentPresenter">
+    <Style Selector=":is(Button).transparent:pointerover /template/ ContentPresenter">
         <Setter Property="RenderTransform" Value="scale(1.2)"></Setter>
     </Style>
     
-    <Style Selector="Button:pointerover /template/ ContentPresenter">
+    <Style Selector=":is(Button):pointerover /template/ ContentPresenter">
         <Setter Property="Foreground" Value="{DynamicResource PrimaryHoverForeground}"></Setter>
         <Setter Property="Background" Value="{DynamicResource PrimaryHoverBackground}"></Setter>
     </Style>
     
-    <Style Selector="Button.transparent">
+    <Style Selector=":is(Button).transparent">
         <Setter Property="Background" Value="Transparent"></Setter>
     </Style>
    
-    <Style Selector="Button.transparent Label.icon-only">
+    <Style Selector=":is(Button).transparent Label.icon-only">
         <Setter Property="FontFamily" Value="{DynamicResource Phosphor}"></Setter>
     </Style>
 
-    <Style Selector="Button.transparent:pointerover /template/ ContentPresenter">
+    <Style Selector=":is(Button).transparent:pointerover /template/ ContentPresenter">
         <Setter Property="Background" Value="Transparent"></Setter>
     </Style>
     
-    <Style Selector="Button.active /template/ ContentPresenter">
+    <Style Selector=":is(Button).active /template/ ContentPresenter">
         <Setter Property="Background" Value="{DynamicResource PrimaryActiveBackground}"></Setter>
     </Style>
     

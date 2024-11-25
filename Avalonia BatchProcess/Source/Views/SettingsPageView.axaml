@@ -31,12 +31,7 @@
                         
                         <!-- Release License -->
                         <TextBlock TextWrapping="Wrap" Text="Remove license of BatchProcess from this machine and release the license back to the server ready to be transferred to another machine."></TextBlock>
-                        <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
-                            <StackPanel Orientation="Horizontal">
-                                <Label Classes="icon" Content="&#xe2fe;"></Label>
-                                <Label Classes="akko" Content="Release License"></Label>
-                            </StackPanel>
-                        </Button>
+                        <IconButton IconText="&#xe2fe;" Content="Release License" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" />
                         
                         <!-- Skip Files -->
                         <TextBlock Grid.Row="1" Grid.Column="0"  TextWrapping="Wrap" Text="Skip files if only Open, Save (Optional) and Close are valid actions."></TextBlock>
@@ -58,11 +53,7 @@ Macros, Actions and other custom files or templates."></TextBlock>
                             <TextBlock TextWrapping="Wrap" Text="* All sub-directories will be searched automatically"></TextBlock>
                         </StackPanel>
                         
-                        <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
-                            <StackPanel Orientation="Horizontal">
-                                <Label Classes="akko" Content="+ Folder"></Label>
-                            </StackPanel>
-                        </Button>
+                        <Button Grid.Row="0" Grid.Column="1" Content="+ Folder" HorizontalAlignment="Stretch" />
                     </Grid>
                     <ListBox ItemsSource="{Binding LocationPaths}">
                         
@@ -97,18 +88,8 @@ then automatically handle checking in and out files from PDM Enterprise."></Text
                         <TextBox Grid.Column="2"></TextBox>
                     </Grid>
                     <StackPanel Orientation="Horizontal">
-                        <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
-                            <StackPanel Orientation="Horizontal">
-                                <Label Classes="icon" Content="&#xe23e;"></Label>
-                                <Label Classes="akko" Content="Login"></Label>
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
-                            <StackPanel Orientation="Horizontal">
-                                <Label Classes="icon" Content="&#xe094;"></Label>
-                                <Label Classes="akko" Content="Refresh Vault"></Label>
-                            </StackPanel>
-                        </Button>
+                        <IconButton IconText="&#xe23e;" Content="Login" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" />
+                        <IconButton IconText="&#xe094;" Content="Refresh Vault" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" />
                     </StackPanel>
                     <Label Content="Connection Established"></Label>
                 </StackPanel>
@@ -121,24 +102,9 @@ then automatically handle checking in and out files from PDM Enterprise."></Text
                         If you are experiencing issues you can try clearing the cache (this won't remove the license).
                     </TextBlock>
                     <StackPanel Orientation="Horizontal">
-                        <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
-                            <StackPanel Orientation="Horizontal">
-                                <Label Classes="icon" Content="&#xec54;"></Label>
-                                <Label Classes="akko" Content="Clear Cache"></Label>
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
-                            <StackPanel Orientation="Horizontal">
-                                <Label Classes="icon" Content="&#xe5de;"></Label>
-                                <Label Classes="akko" Content="Export Cache"></Label>
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
-                            <StackPanel Orientation="Horizontal">
-                                <Label Classes="icon" Content="&#xe20c;"></Label>
-                                <Label Classes="akko" Content="Import Cache"></Label>
-                            </StackPanel>
-                        </Button>
+                        <IconButton IconText="&#xec54;" Content="Clear Cache" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" />
+                        <IconButton IconText="&#xe5de;" Content="Export Cache" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" />
+                        <IconButton IconText="&#xe20c;" Content="Import Cache"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" />
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
