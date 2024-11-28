@@ -24,22 +24,22 @@
                                         <Image PointerPressed="InputElement_OnPointerPressed" Source="{SvgImage /Assets/Images/icon.svg}" Width="22" IsVisible="{Binding !SideMenuExpanded}"></Image>
                                         
                                         <IconButton IconText="&#xe2c2;" HorizontalAlignment="Stretch" Classes.active="{Binding HomePageIsActive}" Command="{Binding GoToHomeCommand}">
-                                                <Label Classes="akko" Content="Home" IsVisible="{Binding SideMenuExpanded}"></Label>
-                                                                                                          </IconButton>
-                                                                                                          <IconButton IconText="&#xe346;"  HorizontalAlignment="Stretch" Classes.active="{Binding ProcessPageIsActive}" Command="{Binding GoToProcessCommand}">
-                                                                                                                  <Label Classes="akko" Content="Process" IsVisible="{Binding SideMenuExpanded}"></Label>
-                                                                                                          </IconButton>
-                                                                                                          <IconButton IconText="&#xe7f2;" HorizontalAlignment="Stretch" Classes.active="{Binding ActionsPageIsActive}" Command="{Binding GoToActionsCommand}">
-                                                                                                                  <Label Classes="akko" Content="Actions" IsVisible="{Binding SideMenuExpanded}"></Label>
-                                                                                                          </IconButton>
-                                                                                                          <IconButton IconText="&#xe3ee;"  HorizontalAlignment="Stretch" Classes.active="{Binding MacrosPageIsActive}" Command="{Binding GoToMacrosCommand}">
-                                                                                                                  <Label Classes="akko" Content="Macros" IsVisible="{Binding SideMenuExpanded}"></Label>
-                                                                                                          </IconButton>
-                                                                                                          <IconButton IconText="&#xeb7a;"  HorizontalAlignment="Stretch" Classes.active="{Binding ReporterPageIsActive}" Command="{Binding GoToReporterCommand}">
-                                                                                                                  <Label Classes="akko" Content="Reporter" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                <Label Content="Home" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                        </IconButton>
+                                        <IconButton IconText="&#xe346;"  HorizontalAlignment="Stretch" Classes.active="{Binding ProcessPageIsActive}" Command="{Binding GoToProcessCommand}">
+                                                <Label Content="Process" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                        </IconButton>
+                                        <IconButton IconText="&#xe7f2;" HorizontalAlignment="Stretch" Classes.active="{Binding ActionsPageIsActive}" Command="{Binding GoToActionsCommand}">
+                                                <Label Content="Actions" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                        </IconButton>
+                                        <IconButton IconText="&#xe3ee;"  HorizontalAlignment="Stretch" Classes.active="{Binding MacrosPageIsActive}" Command="{Binding GoToMacrosCommand}">
+                                                <Label Content="Macros" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                        </IconButton>
+                                        <IconButton IconText="&#xeb7a;"  HorizontalAlignment="Stretch" Classes.active="{Binding ReporterPageIsActive}" Command="{Binding GoToReporterCommand}">
+                                                <Label Content="Reporter" IsVisible="{Binding SideMenuExpanded}"></Label>
                                         </IconButton>
                                         <IconButton IconText="&#xe03a;"  HorizontalAlignment="Stretch" Classes.active="{Binding HistoryPageIsActive}" Command="{Binding GoToHistoryCommand}">
-                                                <Label Classes="akko" Content="History" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                <Label Content="History" IsVisible="{Binding SideMenuExpanded}"></Label>
                                         </IconButton>
                                 </StackPanel>
                                 
