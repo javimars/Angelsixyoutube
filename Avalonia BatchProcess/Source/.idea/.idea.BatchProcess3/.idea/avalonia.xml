@@ -9,6 +9,11 @@
         <entry key="MainView.axaml" value="BatchProcess3.csproj" />
         <entry key="MainWindow.axaml" value="BatchProcess3.csproj" />
         <entry key="Styles/AppDefaultStyles.axaml" value="BatchProcess3.csproj" />
+        <entry key="Styles/Buttons.axaml" value="BatchProcess3.csproj" />
+        <entry key="Styles/ComboBox.axaml" value="BatchProcess3.csproj" />
+        <entry key="Styles/General.axaml" value="BatchProcess3.csproj" />
+        <entry key="Styles/Labels.axaml" value="BatchProcess3.csproj" />
+        <entry key="Styles/TextBlock.axaml" value="BatchProcess3.csproj" />
         <entry key="Views/ActionsPageView.axaml" value="BatchProcess3.csproj" />
         <entry key="Views/HistoryPageView.axaml" value="BatchProcess3.csproj" />
         <entry key="Views/HomePageView.axaml" value="BatchProcess3.csproj" />

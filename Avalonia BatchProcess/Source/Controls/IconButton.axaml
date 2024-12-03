@@ -2,11 +2,12 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:ClassModifier="internal">
   <Design.PreviewWith>
-    <Border Padding="20">
+    <Border Padding="20" Background="{DynamicResource PrimaryBackground}">
       <StackPanel Spacing="20">
         <IconButton IconText="&#xe7f2;" Height="100" Content="Click Me!" />
         <IconButton IconText="&#xe7f2;" Content="Click Me!" />
-        <IconButton IconText="&#xe3e4;" Classes="accent" Content="Click Me!" />
+        <IconButton IconText="&#xe3e4;" Foreground="Red" Classes="accent" Content="Click Me!" />
+        <IconButton IconText="&#xe3e4;" Classes="outline" Content="Click Me!" />
         <Button Content="Click Me!" />
         <Button Classes="accent" Content="Click Me!" />
       </StackPanel>
@@ -45,8 +46,8 @@
             <ContentPresenter.ContentTemplate>
               <DataTemplate DataType="x:Object">
                 <StackPanel Orientation="Horizontal">
-                  <Label VerticalAlignment="Center" Classes="icon" Content="{Binding $parent[IconButton].IconText}"></Label>
-                  <ContentControl VerticalAlignment="Center" DataContext="{Binding $parent[IconButton].DataContext}" Content="{Binding $parent[IconButton].Content}" />
+                  <Label VerticalAlignment="Center" Foreground="{Binding $parent[IconButton].Foreground}" Classes="icon" Content="{Binding $parent[IconButton].IconText}"></Label>
+                  <ContentControl VerticalAlignment="Center" Foreground="{Binding $parent[IconButton].Foreground}" DataContext="{Binding $parent[IconButton].DataContext}" Content="{Binding $parent[IconButton].Content}" />
                 </StackPanel>
               </DataTemplate>
             </ContentPresenter.ContentTemplate>
@@ -54,13 +55,13 @@
         </ContentPresenter>
       </ControlTemplate>
     </Setter>
-
+    
     <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
       <Setter Property="Background" Value="{DynamicResource ButtonBackgroundPointerOver}" />
       <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrushPointerOver}" />
       <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundPointerOver}" />
     </Style>
-
+    
     <Style Selector="^:pressed">
       <Setter Property="RenderTransform" Value="scale(0.98)" />
     </Style>
@@ -101,6 +102,8 @@
         <Setter Property="BorderBrush" Value="{DynamicResource AccentButtonBorderBrushDisabled}" />
         <Setter Property="Foreground" Value="{DynamicResource AccentButtonForegroundDisabled}" />
       </Style>
+      
     </Style>
+    
   </ControlTheme>
 </ResourceDictionary>
