@@ -61,7 +61,7 @@
     
     <!-- Button Styles -->
     <Style Selector=":is(Button)">
-        <Setter Property="FontSize" Value="20"></Setter>
+        <Setter Property="FontSize" Value="17"></Setter>
         <Setter Property="CornerRadius" Value="10"></Setter>
         <Setter Property="FontWeight" Value="Bold"></Setter>
         <Setter Property="Padding" Value="9 5.5 9.2 5.5"></Setter>
@@ -83,6 +83,7 @@
     
     <!-- Normal button (hover) -->
     <Style Selector=":is(Button):not(CheckBox):pointerover /template/ ContentPresenter">
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryBackground}"></Setter>
         <Setter Property="Background" Value="{DynamicResource PrimaryButtonHoverGradient}"></Setter>
     </Style>
 
