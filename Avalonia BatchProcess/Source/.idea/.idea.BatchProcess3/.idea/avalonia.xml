@@ -5,7 +5,10 @@
       <map>
         <entry key="App.axaml" value="BatchProcess3.csproj" />
         <entry key="Controls/CheckBox.axaml" value="BatchProcess3.csproj" />
+        <entry key="Controls/ComboBox.axaml" value="BatchProcess3.csproj" />
+        <entry key="Controls/ComboBoxItem.axaml" value="BatchProcess3.csproj" />
         <entry key="Controls/IconButton.axaml" value="BatchProcess3.csproj" />
+        <entry key="Controls/ListBoxItem.axaml" value="BatchProcess3.csproj" />
         <entry key="MainView.axaml" value="BatchProcess3.csproj" />
         <entry key="MainWindow.axaml" value="BatchProcess3.csproj" />
         <entry key="Styles/AppDefaultStyles.axaml" value="BatchProcess3.csproj" />
@@ -13,6 +16,7 @@
         <entry key="Styles/ComboBox.axaml" value="BatchProcess3.csproj" />
         <entry key="Styles/General.axaml" value="BatchProcess3.csproj" />
         <entry key="Styles/Labels.axaml" value="BatchProcess3.csproj" />
+        <entry key="Styles/ListBox.axaml" value="BatchProcess3.csproj" />
         <entry key="Styles/TextBlock.axaml" value="BatchProcess3.csproj" />
         <entry key="Views/ActionsPageView.axaml" value="BatchProcess3.csproj" />
         <entry key="Views/HistoryPageView.axaml" value="BatchProcess3.csproj" />
